@@ -36,7 +36,6 @@ function addCollapseListeners() {
             this.classList.toggle("active")
             var content = this.nextElementSibling
             var icon = this.childNodes[3];
-            console.log(this.childNodes)
             if (content.style.maxHeight){
                 content.style.maxHeight = null
                 content.style.padding = "0 0.5em"

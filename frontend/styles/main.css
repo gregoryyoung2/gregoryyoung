@@ -38,6 +38,10 @@
     flex-direction: column;
 }
 
+.main-content {
+    margin-bottom: 2em;
+}
+
 .proj-head {
     display: flex;
     flex-direction: row;
@@ -92,6 +96,10 @@
     color: gainsboro;
 }
 
+.about-p {
+    margin-bottom: 0.5em;
+}
+
 #resume {
     display: flex;
     flex-direction: row;
@@ -101,6 +109,28 @@
     margin-top: 2em;
 }
 
-#pdf-resume {
-    margin-left: 1em;
+#contact-text {
+    margin: .5em 0;
+}
+
+#content-proj {
+    margin: .5em 0;
+}
+
+#header-about {
+    margin-bottom: 0.5em;
+}
+
+#section-about {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    
+    #menu {
+        flex-direction: row;
+    }
 }

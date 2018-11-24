@@ -4,6 +4,14 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+a:-webkit-any-link:hover {
+    color: dimgrey;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: vcr;
     src: url(/words/vcr_osd_mono.woff);
@@ -15,11 +23,13 @@ a:-webkit-any-link {
 }
 
 .head-font {
-    font-family: vcr;
+    font-family: vcr, menlo, monospace;
+    font-size: 12pt;
 }
 
 .main-font {
-    font-family: mode;
+    font-family: mode, menlo, monospace;
+    font-size: 10pt;
 }
 
 .menu {
@@ -56,3 +66,4 @@ a:-webkit-any-link {
     margin-left: auto;
     margin-right: auto;
 }
+

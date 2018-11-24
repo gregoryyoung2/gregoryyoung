@@ -1,22 +1,161 @@
 {
     "projects" : [
         {
-            "name" : "Project 1",
-            "date" : "Nov 24 2018",
+            "name" : "SillyQL",
+            "date" : "Nov 20 2018",
             "tags" : [
-                "Tag 1",
-                "Tag 2"
+                "C++",
+                "School"
             ],
-            "description" : "I am writing a description about this project. Descriptions can vary in length but should not be too long. I realize how annoying it will be to type out descriptions in this format. Maybe I'll type them in a word processor and then copy and paste. Well see.",
+            "description" : "I developed a relational database operable with a simplified structured query language (SillyQL). Project learning goals were to appropriately use different types of dictionary data structures (hash map, binary search tree). Project had to meet time and memory complexity constraints. Received a full score on the project.",
+            "link-name" : null,
             "link" : null
         },
         {
-            "name" : "Project 2",
-            "date" : "Nov 22 2018",
+            "name" : "Error Correcting Codes",
+            "date" : "Nov 19 2018",
             "tags" : [
-                "Tag 3"
+                "C++",
+                "Math",
+                "School"
             ],
-            "description" : "I am writing a description about this project. Descriptions can vary in length but should not be too long. I realize how annoying it will be to type out descriptions in this format. Maybe I'll type them in a word processor and then copy and paste. Well see.",
+            "description" : "I worked with a team of two other students, where we studied an application of linear algebra: error correcting codes. We developed a program in C++ to receive a base 2 encoded ascii message, perform a parity check on the received stream, resolve any errors which occurred in transmission, and then decode it and print result.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Mine Escape",
+            "date" : "Oct 10 2018",
+            "tags" : [
+                "C++",
+                "School"
+            ],
+            "description" : "I developed an algorithm to find an escape route through a mine under time and memory constraints. The mine consisted of a two dimensional discrete field of pieces of rock to mine through. Each rock had a certain difficulty to mine. The main learning goal of this project was the use of a priority queue to mine through the easiest to mine rocks first. Another component of this project was to implement a variety of priority queues. The least trivial was implementing one based on a <a href=\"https://en.wikipedia.org/wiki/Pairing_heap\" target=\"_blank\">Pairing Heap</a>. Received a full score on the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Letterman",
+            "date" : "Sept 27 2018",
+            "tags" : [
+                "C++",
+                "School"
+            ],
+            "description" : "I developed an algorithm to input one word and attempt to morph it into another word given a list of usable words and certain constraints. Learning goals of this project were to perform depth and breadth first searches, utilizing appropriate data structures (stack, queue). Project had to meet time and memory constraints. Received a full score on the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Lighting API",
+            "date" : "Aug 01 2018",
+            "tags" : [
+                "C++",
+                "24G"
+            ],
+            "description" : "I developed a high level C++ framework to interface with <a href=\"https://en.wikipedia.org/wiki/DMX512\" target=\"_blank\">DMX</a> controlled lights. Also developed bindings for the framework in Python and Node.js for simple integration with other applications.  Supported multiple serial outputs and DMX over IP outputs. Implemented framework in the company’s internal bowling alley to control fun lights and sync them with the bowling game. Framework was able to easily control thousands of individually addressable LED pixels, and including a realtime effects engine. The goal of this was to make it easy to integrate conventional effect lights with digital experiences.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Bluetooth Network Stack",
+            "date" : "Aug 01 2018",
+            "tags" : [
+                "JS",
+                "Swift",
+                "24G"
+            ],
+            "description" : "I developed a simple protocol to communicate over 802.15.1 using GATT profile. Framework was able to integrate into Node.js applications, and native iOS applications. Made it very easy for devices to connect and transmit messages between them. I also worked to port this to some small micro controllers for miniaturization purposes. The goal of this was the implement the framework into wireless custom made remotes and communicate with a server for a digital experience.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Augmented Reality Room Scheduler",
+            "date" : "Jul 01 2018",
+            "tags" : [
+                "Swift",
+                "iOS",
+                "24G"
+            ],
+            "description" : "I developed an application utilizing ARKit for iOS. The user can point their camera at any conference room in the office, and it will detect the specific conference room based on visual and location data. Then, it will render the availability of the conference room in AR space, based on the company’s internal room scheduling database. The goal of this was to research capabilities of ARKit image recognition, and to encourage employees to use the room scheduler in a fun way.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Augmented Reality Ping Pong",
+            "date" : "Jul 01 2018",
+            "tags" : [
+                "Swift",
+                "iOS",
+                "24G"
+            ],
+            "description" : "I developed an AR game experience using ARKit for iOS. This game is similar to Atari Pong. I utilized the SpriteKit and SceneKit frameworks to render a pong game in AR space. I also developed a custom physics engine. The game supported touch, and motion controls for immersion in the AR experience. It also allowed playing against a computer player I designed. The goal of this game was to research multi user AR experiences, and other ARKit 2.0 features.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Google Next: The Suite Life",
+            "date" : "Nov 19 2018",
+            "tags" : [
+                "JS",
+                "24G"
+            ],
+            "description" : "I developed a backend in Node.js for a digital experience displayed on the floor at Google Next 2018. The goal of this experience was to demonstrate the effectiveness of GSuite in the workplace. As users went through with the experience on the frontend, my backend kept track of their progress using web sockets and controlled hundreds of color changing lights to match their progress in the game.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Facial Recognition API",
+            "date" : "May 01 2018",
+            "tags" : [
+                "24G"
+            ],
+            "description" : "I worked on a team with 3 other interns to develop an API which made it easy to maintain a database matching faces to names (and other data), and easily lookup names based on an image of someones face. I primarily worked on the backend, which included training the model and correcting incorrect input. We also developed a frontend demonstration of the API in use. Potential uses for this API are a loosely security login system for games, and detecting faces from security footage.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Droppo Bottle",
+            "date" : "Dec 01 2017",
+            "tags" : [
+                "C++",
+                "School"
+            ],
+            "description" : "I lead a team of 4 other students to engineer a water bottle which recommends water consumption. It tracked a variety of biometrics to suggest a base amount, and then subtracted from that amount as the user consumes water through the bottle. We went through a variety of design steps in order to create an initial prototype. The prototype utilized a micro controller along with physical sensors to keep track of the water exiting the bottle. We received an A on the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "You In Space",
+            "date" : "Jun 01 2017",
+            "tags" : [
+                "C#",
+                "Unity",
+                "School"
+            ],
+            "description" : "I co-lead a team of 6 other students to develop a 2D side scrolling platformer game with 3D graphics. The concept of the game was to allow a player to customize their character, and then play through various levels as that character. We implemented the ability for the player to shoot enemies, and we implemented enemies for the player to avoid.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "DIYDIY",
+            "date" : "Feb 01 2017",
+            "tags" : [
+                "PHP",
+                "Web"
+            ],
+            "description" : "I lead a team of 3 other students to create a website for a web design competition. We developed a website to host do-it-yourself (DIY) articles. This site allowed users to submit their own content, and interact with other users’ content (rate, comment, share, follow, etc). We had a moderation system to verify the quality of the submitted content, and to select high quality content to be featured. At its peak, the site had over 1000 registered users, with around 150 submitted articles.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Unlimited Launcher",
+            "date" : "Jun 01 2015",
+            "tags" : [
+                "C#",
+                "Desktop"
+            ],
+            "description" : "I worked on a small multidisciplinary team to develop a launcher for a free to play video game. The official launcher did not offer basic functionality like remembering the users password. The first feature I implemented was remembering the password, and we developed a way to encrypt it and store it locally. We also added features such as easily installing modifications to the game through the launcher, and sharing news on the game right within the launcher.",
+            "link-name" : null,
             "link" : null
         }
     ]
