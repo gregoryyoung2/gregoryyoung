@@ -2,7 +2,7 @@
     "projects" : [
         {
             "name" : "SillyQL",
-            "date" : "Nov 20 2018",
+            "date" : "181120",
             "tags" : [
                 "C++",
                 "School"
@@ -13,7 +13,7 @@
         },
         {
             "name" : "Error Correcting Codes",
-            "date" : "Nov 19 2018",
+            "date" : "181119",
             "tags" : [
                 "C++",
                 "Math",
@@ -25,7 +25,7 @@
         },
         {
             "name" : "Mine Escape",
-            "date" : "Oct 10 2018",
+            "date" : "181010",
             "tags" : [
                 "C++",
                 "School"
@@ -36,7 +36,7 @@
         },
         {
             "name" : "Letterman",
-            "date" : "Sept 27 2018",
+            "date" : "180927",
             "tags" : [
                 "C++",
                 "School"
@@ -47,7 +47,7 @@
         },
         {
             "name" : "Lighting API",
-            "date" : "Aug 01 2018",
+            "date" : "180801",
             "tags" : [
                 "C++",
                 "24G"
@@ -58,7 +58,7 @@
         },
         {
             "name" : "Bluetooth Network Stack",
-            "date" : "Aug 01 2018",
+            "date" : "180801",
             "tags" : [
                 "JS",
                 "Swift",
@@ -70,7 +70,7 @@
         },
         {
             "name" : "Augmented Reality Room Scheduler",
-            "date" : "Jul 01 2018",
+            "date" : "180701",
             "tags" : [
                 "Swift",
                 "iOS",
@@ -82,7 +82,7 @@
         },
         {
             "name" : "Augmented Reality Ping Pong",
-            "date" : "Jul 01 2018",
+            "date" : "180701",
             "tags" : [
                 "Swift",
                 "iOS",
@@ -94,7 +94,7 @@
         },
         {
             "name" : "Google Next: The Suite Life",
-            "date" : "Nov 19 2018",
+            "date" : "180601",
             "tags" : [
                 "JS",
                 "24G"
@@ -105,7 +105,7 @@
         },
         {
             "name" : "Facial Recognition API",
-            "date" : "May 01 2018",
+            "date" : "180501",
             "tags" : [
                 "24G"
             ],
@@ -115,7 +115,7 @@
         },
         {
             "name" : "Droppo Bottle",
-            "date" : "Dec 01 2017",
+            "date" : "171201",
             "tags" : [
                 "C++",
                 "School"
@@ -126,7 +126,7 @@
         },
         {
             "name" : "You In Space",
-            "date" : "Jun 01 2017",
+            "date" : "170601",
             "tags" : [
                 "C#",
                 "Unity",
@@ -138,7 +138,7 @@
         },
         {
             "name" : "DIYDIY",
-            "date" : "Feb 01 2017",
+            "date" : "170201",
             "tags" : [
                 "PHP",
                 "Web"
@@ -149,7 +149,7 @@
         },
         {
             "name" : "Unlimited Launcher",
-            "date" : "Jun 01 2015",
+            "date" : "150106",
             "tags" : [
                 "C#",
                 "Desktop"
