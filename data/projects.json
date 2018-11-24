@@ -1,0 +1,23 @@
+{
+    "projects" : [
+        {
+            "name" : "Project 1",
+            "date" : "Nov 24 2018",
+            "tags" : [
+                "Tag 1",
+                "Tag 2"
+            ],
+            "description" : "I am writing a description about this project. Descriptions can vary in length but should not be too long. I realize how annoying it will be to type out descriptions in this format. Maybe I'll type them in a word processor and then copy and paste. Well see.",
+            "link" : null
+        },
+        {
+            "name" : "Project 2",
+            "date" : "Nov 22 2018",
+            "tags" : [
+                "Tag 3"
+            ],
+            "description" : "I am writing a description about this project. Descriptions can vary in length but should not be too long. I realize how annoying it will be to type out descriptions in this format. Maybe I'll type them in a word processor and then copy and paste. Well see.",
+            "link" : null
+        }
+    ]
+}
