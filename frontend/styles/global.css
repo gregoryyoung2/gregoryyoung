@@ -1,0 +1,58 @@
+a:-webkit-any-link {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: vcr;
+    src: url(/words/vcr_osd_mono.woff);
+}
+
+@font-face {
+    font-family: mode;
+    src: url(/words/mode_nine.woff);
+}
+
+.head-font {
+    font-family: vcr;
+}
+
+.main-font {
+    font-family: mode;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.menu-item:hover {
+    color: dimgray;
+    cursor: pointer;
+}
+
+.main-picture {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.main-name {
+    margin-top: 1em;
+}
+
+.main-media {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
