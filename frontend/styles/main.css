@@ -69,8 +69,9 @@
     border-left: .5em solid transparent;
     border-right: .5em solid transparent;
     border-top: .5em solid grey;
-    margin-top: .3em;
-    margin-left: .5em;
+    margin-left: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .proj-cont {
@@ -94,10 +95,17 @@
     padding: 0.2em;
     margin: 0 0.1em;
     color: gainsboro;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .about-p {
     margin-bottom: 0.5em;
+}
+
+.mobile-social {
+    display: none;
 }
 
 #resume {
@@ -125,12 +133,63 @@
     margin-bottom: 0;
 }
 
+
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
     }
     
+    .left {
+        position: relative;
+        height: auto;
+        width: 96vw;
+        margin: 0;
+    }
+
+    .center {
+        width: 96vw;
+        margin: 0;
+    }
+
+    .right {
+        height: 0;
+    }
+
+    .menu-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .proj-head:hover {
+        color: dimgrey;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .mobile-social {
+        display: block;
+    }
+
     #menu {
+        display: flex;
         flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+
+    #me {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #media {
+        display: none;
     }
 }
