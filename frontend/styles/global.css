@@ -44,7 +44,7 @@ html {
 }
 
 .menu-item:hover {
-    color: dimgray;
+    color: dimgray !important;
     cursor: pointer;
 }
 
