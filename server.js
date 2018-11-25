@@ -7,10 +7,17 @@ app.use('/styles', express.static(__dirname + '/frontend/styles'))
 app.use('/pixels', express.static(__dirname + '/frontend/pixels'))
 app.use('/words', express.static(__dirname + '/frontend/words'))
 app.use('/content/left.html', express.static(__dirname + '/frontend/content/left.html'))
-app.use('/data/projects', express.static(__dirname + '/data/projects.json'))
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/frontend/content/main.html');
-});
+})
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get('/api/getProjects', function(req, res) {
+    let projects = require(__dirname + `/data/projects`)
+    projects.projects.sort((a,b) => {
+        a.date - b.date
+    })
+    res.send(projects)
+})
+
+app.listen(port, () => console.log(`listening on port ${port}!`))

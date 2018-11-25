@@ -2,14 +2,13 @@ $(document).ready(function () {
    
     $("#left").load("/content/left.html")
 
-    $.getJSON('/data/projects', function(data) {
+    $.get('/api/getProjects', function(data) {
         let i = 1;
         for (project of data.projects) {
             $("#proj-list").append(fillProject(project, i++))
         }
         addCollapseListeners()
     })
-    
     
 })
 
