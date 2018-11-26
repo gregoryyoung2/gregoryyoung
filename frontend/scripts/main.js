@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#left").load("/content/left.html")
 
     $.get('/api/getProjects', function(data) {
-        let i = 1;
+        let i = 1
         for (project of data.projects) {
             $("#proj-list").append(fillProject(project, i++))
         }
@@ -24,7 +24,7 @@ function fillProject(x, i) {
     html += `<div id="proj-cont-${i}" class="proj-cont">\n`
     html += x.description
     html += `</div>\n</div>`
-    return html;
+    return html
 }
 
 function addCollapseListeners() {
@@ -34,7 +34,7 @@ function addCollapseListeners() {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active")
             var content = this.nextElementSibling
-            var icon = this.childNodes[3];
+            var icon = this.childNodes[3]
             if (content.style.maxHeight){
                 content.style.maxHeight = null
                 content.style.padding = "0 0.5em"
@@ -49,6 +49,6 @@ function addCollapseListeners() {
                 icon.style.borderBottom = ".5em solid grey"
                 icon.style.borderTop = "none"
             } 
-        });
+        })
     }
 }
