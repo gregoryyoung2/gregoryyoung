@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 app.get('/api/getProjects', function(req, res) {
     let projects = require(__dirname + `/data/projects`)
     projects.projects.sort((a,b) => {
-        a.date - b.date
+        return b.date - a.date
     })
     res.send(projects)
 })
