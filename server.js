@@ -20,4 +20,8 @@ app.get('/api/getProjects', function(req, res) {
     res.send(projects)
 })
 
+app.get('/api/getResume', function(req, res) {
+    res.download(__dirname + `/data/Gregory Young Resume 29-11-18.pdf`)
+})
+
 app.listen(port, () => console.log(`listening on port ${port}!`))
