@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 80
 
 app.use('/scripts', express.static(__dirname + '/frontend/scripts'))
 app.use('/styles', express.static(__dirname + '/frontend/styles'))
