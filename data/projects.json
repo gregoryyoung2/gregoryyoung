@@ -1,6 +1,17 @@
 {
     "projects" : [
         {
+            "name" : "Pokemon",
+            "date" : "181211",
+            "tags" : [
+                "C++",
+                "School"
+            ],
+            "description" : "This project was a Pokemon themed graph project, spanning three parts. Part one required a C++ implementation of Prim’s algorithm in order to find a minimum spanning tree of a dense graph with up to 50,000 vertices. Part two required a C++ traveling sales person problem estimation, which could estimate a TSP solution for a dense graph with 50,000 vertices in around 10 seconds. Part three required implementation of a branch and bound algorithm to find a perfect TSP solution for a dense graph with up to 40 vertices. Received a full score on the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
             "name" : "SillyQL",
             "date" : "181120",
             "tags" : [
