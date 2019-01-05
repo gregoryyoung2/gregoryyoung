@@ -7,9 +7,9 @@ const domain = `gregoryyou.ng`
 const port = 80
 const httpsPort = 443
 
-const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8')
-const certificate = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8')
-const ca = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8')
+const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, `utf8`)
+const certificate = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, `utf8`)
+const ca = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, `utf8`)
 
 const credentials = {
 	key: privateKey,
@@ -39,10 +39,14 @@ app.get('/api/getResume', function(req, res) {
     res.download(__dirname + `/data/Gregory Young Resume 29-11-18.pdf`)
 })
 
-const httpServer = http.createServer(app)
+const httpServer = http.createServer()
+
+http.get('*', function(req, res) {  
+    res.redirect('https://' + req.headers.host + req.url);
+})
+
 const httpsServer = https.createServer(credentials, app)
 
 httpServer.listen(80, () => console.log(`http listening on port ${port}!`))
 httpsServer.listen(443, () => console.log(`https listening on port ${httpsPort}`))
 
-//app.listen(port, () => console.log(`listening on port ${port}!`))
