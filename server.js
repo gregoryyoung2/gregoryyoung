@@ -41,7 +41,7 @@ app.get('/api/getResume', function(req, res) {
 
 const httpServer = http.createServer()
 
-http.get('*', function(req, res) {  
+httpServer.get('*', function(req, res) {  
     res.redirect('https://' + req.headers.host + req.url);
 })
 
