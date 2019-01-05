@@ -1,6 +1,5 @@
 const fs = require('fs')
 const express = require('express')
-const http = require('http')
 const https = require('https')
 const app = express()
 const domain = `gregoryyou.ng`
@@ -39,7 +38,7 @@ app.get('/api/getResume', function(req, res) {
     res.download(__dirname + `/data/Gregory Young Resume 29-11-18.pdf`)
 })
 
-const httpServer = http.createServer()
+const httpServer = express.createServer()
 
 httpServer.get('*', function(req, res) {  
     res.redirect('https://' + req.headers.host + req.url);
