@@ -3,7 +3,7 @@ const express = require('express')
 const https = require('https')
 const app = express()
 const domain = `gregoryyou.ng`
-const port = 443
+const port = 80
 
 const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, `utf8`)
 const certificate = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, `utf8`)
