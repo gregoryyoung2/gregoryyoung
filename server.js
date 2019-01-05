@@ -44,7 +44,7 @@ const httpsServer = https.createServer(credentials, app)
 httpsServer.listen(443, () => console.log(`https listening on port ${httpsPort}!`))
 
 redirect.get("*", function(req, res, next) {
-    res.redirect("https://" + req.headers.host + "/" + req.path)
+    res.redirect("https://" + req.headers.host + req.path)
 })
 
 http.createServer(redirect).listen(httpPort, function() {
