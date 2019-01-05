@@ -1,6 +1,21 @@
+const fs = require('fs')
 const express = require('express')
+const http = require('http')
+const https = require('https')
 const app = express()
+const domain = `gregoryyou.ng`
 const port = 80
+const httpsPort = 443
+
+const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8')
+const certificate = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8')
+const ca = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8')
+
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+}
 
 app.use('/scripts', express.static(__dirname + '/frontend/scripts'))
 app.use('/styles', express.static(__dirname + '/frontend/styles'))
@@ -24,4 +39,10 @@ app.get('/api/getResume', function(req, res) {
     res.download(__dirname + `/data/Gregory Young Resume 29-11-18.pdf`)
 })
 
-app.listen(port, () => console.log(`listening on port ${port}!`))
+const httpServer = http.createServer(app)
+const httpsServer = https.createServer(credentials, app)
+
+httpServer.listen(80, () => console.log(`http listening on port ${port}!`))
+httpsServer.listen(443, () => console.log(`https listening on port ${httpsPort}`))
+
+//app.listen(port, () => console.log(`listening on port ${port}!`))
