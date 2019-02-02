@@ -31,7 +31,7 @@ app.get('/api/getProjects', function(req, res) {
 })
 
 app.get('/api/getResume', function(req, res) {
-    res.download(__dirname + `/data/Gregory Young Resume 29-11-18.pdf`)
+    res.download(__dirname + `/data/GregoryYoungResume.pdf`)
 })
 
 if (debug) {
