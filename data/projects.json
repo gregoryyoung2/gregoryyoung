@@ -1,6 +1,30 @@
 {
     "projects" : [
         {
+            "name" : "LC2K Assembler/Simulator",
+            "date" : "190205",
+            "tags" : [
+                "ASM",
+                "C",
+                "School"
+            ],
+            "description" : "For this project I created an assembler to assemble LC2K (LC2K is a made up simple ISA for academic purposes) assembly code into machine code. Then I made a simulator to load the machine code into memory and execute it to LC2K specifications. These components were written in standard C. Part of the assignment was to create test cases for these programs and make an efficient multiplication algorithm for positive 16 bit integers in LC2K assembly (LC2K does not support multiplication instructions). I received a full score for the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
+            "name" : "Chess AI",
+            "date" : "181228",
+            "tags" : [
+                "Swift",
+                "AI",
+                "iOS"
+            ],
+            "description" : "This is a personal project where I developed an iOS chess frontend in Swift with SpriteKit and an AI model to play against a human player. I researched different chess mathematical evaluation models to create a maximization function for the AI player, to allow it to pick the best possible moves. This model considers different aspects like piece development, material advantages, game stages and more. The current model uses a variation of the minimax algorithm along with this maximization function. You can view the <a href=\"https://github.com/gregoryyoung2/chess\" target=\"_blank\">full source code on my Github</a>, feel free to contribute and build it to try it out.",
+            "link-name" : "Github",
+            "link" : "https://github.com/gregoryyoung2/chess"
+        },
+        {
             "name" : "Pokemon",
             "date" : "181211",
             "tags" : [
