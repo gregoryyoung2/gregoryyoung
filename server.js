@@ -35,9 +35,7 @@ app.get('/api/getResume', function(req, res) {
 })
 
 if (debug) {
-
     app.listen(debug, () => console.log(`debug server listening on port ${debugPort}`))
-    
 }
 else {
 
@@ -50,7 +48,6 @@ else {
         cert: certificate,
         ca: ca
     }
-
 
     const httpsServer = https.createServer(credentials, app)
     httpsServer.listen(443, () => console.log(`https listening on port ${httpsPort}!`))

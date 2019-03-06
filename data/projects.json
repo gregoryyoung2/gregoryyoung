@@ -1,6 +1,18 @@
 {
     "projects" : [
         {
+            "name" : "LC2K Linker",
+            "date" : "190312",
+            "tags" : [
+                "ASM",
+                "C",
+                "School"
+            ],
+            "description" : "For this project I modified the assembler I created in the “LC2K Assembler/Simulator” project (LC2K is a made up simple ISA for academic purposes) to output object files for assembly files.  I then developed a linker in C to link the object files together into a machine code file executable by an LC2K CPU. The objective of this modification was to allow defining subroutines in different files, and sharing global addresses/data between subroutines. There was also a part of this project which involved creating an recursive combination subroutine in LC2K assembly, and running it along with a main function. Received a full score on all parts of the project.",
+            "link-name" : null,
+            "link" : null
+        },
+        {
             "name" : "LC2K Assembler/Simulator",
             "date" : "190205",
             "tags" : [
