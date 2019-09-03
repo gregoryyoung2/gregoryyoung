@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(242, 242, 247)
+}
+
 @font-face {
     font-family: vcr;
     src: url(/words/vcr_osd_mono.woff);

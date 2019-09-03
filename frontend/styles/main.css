@@ -133,7 +133,31 @@
     margin-bottom: 0;
 }
 
-
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(28, 28, 30)
+    }
+    .left {
+        color: rgb(229,229,234);
+    }
+    .center {
+        color: rgb(229,229,234)
+    }
+    .proj-head {
+        border-bottom-color: rgb(242,242,247);
+    }
+    .proj-head:hover {
+        color: rgb(242,242,247);
+        background-color: rgb(44, 44, 46);
+    }
+    .dropdown {
+        border-top-color: rgb(72,72,74)
+    }
+    .proj-tag {
+        background-color: rgb(242,242,247);
+        color: rgb(44, 44, 46);
+    }
+}
 
 @media (max-width: 768px) {
     .main {
