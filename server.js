@@ -22,10 +22,6 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/frontend/content/main.html');
 })
 
-app.get('/parti', function(req, res) {
-    res.sendFile(__dirname + '/frontend/content/party.html');
-})
-
 app.get('/api/getProjects', function(req, res) {
     let projects = require(__dirname + `/data/projects`)
     projects.projects.sort((a,b) => {
